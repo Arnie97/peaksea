@@ -65,7 +65,7 @@ if &background=='light'
   hi ModeMsg		guifg=fg	guibg=#b0b0e0	gui=NONE
   hi VisualNOS		guifg=fg	guibg=#b0b0e0	gui=NONE
   hi SpecialKey		guifg=#1050a0	guibg=NONE	gui=NONE
-  hi NonText		guifg=#002090	guibg=#d0d0d0	gui=NONE
+  hi NonText		guifg=#b0b0b0	guibg=NONE	gui=NONE
   hi Directory		guifg=#a030a0	guibg=NONE	gui=NONE
   hi ErrorMsg		guifg=fg	guibg=#f0b090	gui=NONE
   hi MoreMsg		guifg=#489000	guibg=NONE	gui=NONE
@@ -73,12 +73,12 @@ if &background=='light'
   hi WarningMsg		guifg=#b02000	guibg=NONE	gui=NONE
   hi WildMenu		guifg=fg	guibg=#d0d090	gui=NONE
   hi Folded		guifg=NONE	guibg=#b0e0b0	gui=NONE
-  hi FoldColumn		guifg=fg	guibg=#90e090	gui=NONE
-  hi DiffAdd		guifg=NONE	guibg=#b0b0e0	gui=NONE
-  hi DiffChange		guifg=NONE	guibg=#e0b0e0	gui=NONE
-  hi DiffDelete		guifg=#002090	guibg=#d0d0d0	gui=NONE
-  hi DiffText		guifg=NONE	guibg=#c0e080	gui=NONE
-  hi SignColumn		guifg=fg	guibg=#90e090	gui=NONE
+  hi FoldColumn		guifg=#c0c0c0	guibg=NONE	gui=NONE
+  hi DiffAdd		guifg=NONE	guibg=#c0e080	gui=NONE
+  hi DiffChange		guifg=NONE	guibg=#c0e0e0	gui=NONE
+  hi DiffDelete		guifg=NONE	guibg=#e08080	gui=NONE
+  hi DiffText		guifg=NONE	guibg=#e0e0a0	gui=NONE
+  hi SignColumn		guifg=fg	guibg=NONE	gui=NONE
 
   hi IncSearch		guifg=#f0f0f0	guibg=#806060	gui=NONE
   hi StatusLineNC	guifg=fg	guibg=#c0c0c0	gui=NONE
@@ -100,8 +100,8 @@ if &background=='light'
     hi TabLine		guifg=fg	guibg=#c0c0c0	gui=NONE
     hi TabLineFill	guifg=fg	guibg=#c0c0c0	gui=NONE
     hi TabLineSel	guifg=fg	guibg=NONE	gui=NONE
-    hi CursorColumn	guifg=NONE	guibg=#f0b090
-    hi CursorLine	guifg=NONE	guibg=NONE	gui=underline
+    hi CursorColumn	guifg=NONE	guibg=#d0d0d0	gui=NONE
+    hi CursorLine	guifg=NONE	guibg=#d0d0d0	gui=NONE
     hi MatchParen	guifg=NONE	guibg=#c0e080
   endif
 
@@ -120,7 +120,6 @@ if &background=='light'
     endif
     hi TabLine		gui=underline
     hi TabLineFill	gui=underline
-    hi CursorLine	gui=underline
   endif
 
   " For reversed stuffs, clear the reversed prop and set the bold prop again
@@ -176,7 +175,7 @@ if &background=='light'
     hi ModeMsg		ctermfg=fg	ctermbg=!b0b0e0	cterm=NONE
     hi VisualNOS	ctermfg=fg	ctermbg=!b0b0e0	cterm=NONE
     hi SpecialKey	ctermfg=!1050a0	ctermbg=NONE	cterm=NONE
-    hi NonText		ctermfg=!002090	ctermbg=!d0d0d0	cterm=NONE
+    hi NonText		ctermfg=!b0b0b0	ctermbg=NONE	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
     "hi NonText		ctermfg=!002090	ctermbg=NONE	cterm=NONE
     hi Directory	ctermfg=!a030a0	ctermbg=NONE	cterm=NONE
@@ -186,12 +185,12 @@ if &background=='light'
     hi WarningMsg	ctermfg=!b02000	ctermbg=NONE	cterm=NONE
     hi WildMenu		ctermfg=fg	ctermbg=!d0d090	cterm=NONE
     hi Folded		ctermfg=NONE	ctermbg=!b0e0b0	cterm=NONE
-    hi FoldColumn	ctermfg=fg	ctermbg=!90e090	cterm=NONE
-    hi DiffAdd		ctermfg=NONE	ctermbg=!b0b0e0	cterm=NONE
-    hi DiffChange	ctermfg=NONE	ctermbg=!e0b0e0	cterm=NONE
-    hi DiffDelete	ctermfg=!002090	ctermbg=!d0d0d0	cterm=NONE
-    hi DiffText		ctermfg=NONE	ctermbg=!c0e080	cterm=NONE
-    hi SignColumn	ctermfg=fg	ctermbg=!90e090	cterm=NONE
+    hi FoldColumn	ctermfg=!c0c0c0	ctermbg=NONE	cterm=NONE
+    hi DiffAdd		ctermfg=NONE	ctermbg=!c0e080	cterm=NONE
+    hi DiffChange	ctermfg=NONE	ctermbg=!c0e0e0	cterm=NONE
+    hi DiffDelete	ctermfg=NONE	ctermbg=!e08080	cterm=NONE
+    hi DiffText		ctermfg=NONE	ctermbg=!e0e0a0	cterm=NONE
+    hi SignColumn	ctermfg=fg	ctermbg=NONE	cterm=NONE
 
     hi IncSearch	ctermfg=!f0f0f0	ctermbg=!806060	cterm=NONE
     hi StatusLineNC	ctermfg=fg	ctermbg=!c0c0c0	cterm=NONE
@@ -221,14 +220,10 @@ if &background=='light'
       hi TabLine	ctermfg=fg	ctermbg=!c0c0c0	cterm=NONE
       hi TabLineFill	ctermfg=fg	ctermbg=!c0c0c0	cterm=NONE
       hi TabLineSel	ctermfg=fg	ctermbg=NONE	cterm=NONE
-      hi CursorColumn	ctermfg=NONE	ctermbg=!f0b090
-      hi CursorLine	ctermfg=NONE	ctermbg=NONE	cterm=underline
+      hi CursorColumn	ctermfg=NONE	ctermbg=!d0d0d0	cterm=NONE
+      hi CursorLine	ctermfg=NONE	ctermbg=!d0d0d0	cterm=NONE
       hi MatchParen	ctermfg=NONE	ctermbg=!c0e080
     endif
-
-    hi TabLine		cterm=underline
-    hi TabLineFill	cterm=underline
-    hi CursorLine	cterm=underline
 
     " For reversed stuffs, clear the reversed prop and set the bold prop again
     hi IncSearch	cterm=bold
@@ -277,20 +272,20 @@ elseif &background=='dark'
   hi ModeMsg		guifg=fg	guibg=#000080	gui=NONE
   hi VisualNOS		guifg=fg	guibg=#000080	gui=NONE
   hi SpecialKey		guifg=#b0d0f0	guibg=NONE	gui=NONE
-  hi NonText		guifg=#6080f0	guibg=#101010	gui=NONE
+  hi NonText		guifg=#606060	guibg=NONE	gui=NONE
   hi Directory		guifg=#80c0e0	guibg=NONE	gui=NONE
   hi ErrorMsg		guifg=#d0d090	guibg=#800000	gui=NONE
   hi MoreMsg		guifg=#c0e080	guibg=NONE	gui=NONE
   hi Title		guifg=#f0c0f0	guibg=NONE	gui=NONE
   hi WarningMsg		guifg=#f08060	guibg=NONE	gui=NONE
   hi WildMenu		guifg=#000000	guibg=#d0d090	gui=NONE
-  hi Folded		guifg=NONE	guibg=#004000	gui=NONE
-  hi FoldColumn		guifg=#e0e0e0	guibg=#008000	gui=NONE
-  hi DiffAdd		guifg=NONE	guibg=#000080	gui=NONE
-  hi DiffChange		guifg=NONE	guibg=#800080	gui=NONE
-  hi DiffDelete		guifg=#6080f0	guibg=#202020	gui=NONE
-  hi DiffText		guifg=#000000	guibg=#c0e080	gui=NONE
-  hi SignColumn		guifg=#e0e0e0	guibg=#008000	gui=NONE
+  hi Folded		guifg=NONE	guibg=#404040	gui=NONE
+  hi FoldColumn		guifg=#404040	guibg=NONE	gui=NONE
+  hi DiffAdd		guifg=NONE	guibg=#004000	gui=NONE
+  hi DiffChange		guifg=NONE	guibg=#005080	gui=NONE
+  hi DiffDelete		guifg=NONE	guibg=#600000	gui=NONE
+  hi DiffText		guifg=NONE	guibg=#804000	gui=NONE
+  hi SignColumn		guifg=#e0e0e0	guibg=NONE	gui=NONE
   hi IncSearch		guifg=#000000	guibg=#d0d0d0	gui=NONE
   hi StatusLineNC	guifg=#000000	guibg=#c0c0c0	gui=NONE
   hi VertSplit		guifg=#000000	guibg=#c0c0c0	gui=NONE
@@ -309,11 +304,11 @@ elseif &background=='dark'
     hi PmenuSel		guifg=#000000	guibg=#d0d0d0	gui=NONE
     hi PmenuSbar	guifg=fg	guibg=#000080	gui=NONE
     hi PmenuThumb	guifg=fg	guibg=#008000	gui=NONE
-    hi TabLine		guifg=fg	guibg=#008000	gui=NONE
-    hi TabLineFill	guifg=fg	guibg=#008000	gui=NONE
+    hi TabLine		guifg=fg	guibg=#606060	gui=NONE
+    hi TabLineFill	guifg=fg	guibg=#606060	gui=NONE
     hi TabLineSel	guifg=fg	guibg=NONE	gui=NONE
-    hi CursorColumn	guifg=NONE	guibg=#800000	gui=NONE
-    hi CursorLine	guifg=NONE	guibg=NONE	gui=underline
+    hi CursorColumn	guifg=NONE	guibg=#303030	gui=NONE
+    hi CursorLine	guifg=NONE	guibg=#303030	gui=NONE
     hi MatchParen	guifg=NONE	guibg=#800080
   endif
 
@@ -333,7 +328,6 @@ elseif &background=='dark'
     hi TabLine		gui=underline
     hi TabLineFill	gui=underline
     hi Underlined	gui=underline
-    hi CursorLine	gui=underline
   endif
 
   " gui define for background=dark end here
@@ -352,7 +346,7 @@ elseif &background=='dark'
     hi Error		ctermfg=Red	    ctermbg=NONE
     hi Identifier	ctermfg=Magenta     ctermbg=NONE
     hi SpecialKey	ctermfg=Cyan	    ctermbg=NONE
-    hi NonText		ctermfg=Blue	    ctermbg=NONE
+    hi NonText		ctermfg=LightGrey   ctermbg=NONE
     hi Directory	ctermfg=Blue	    ctermbg=NONE
     hi MoreMsg		ctermfg=Green	    ctermbg=NONE
     hi Title		ctermfg=Magenta     ctermbg=NONE
@@ -370,8 +364,8 @@ elseif &background=='dark'
     hi VisualNOS	ctermfg=Grey	    ctermbg=DarkBlue
     hi ErrorMsg		ctermfg=DarkYellow  ctermbg=DarkRed
     hi WildMenu		ctermfg=Black	    ctermbg=DarkYellow
-    hi FoldColumn	ctermfg=White	    ctermbg=DarkGreen
-    hi SignColumn	ctermfg=White	    ctermbg=DarkGreen
+    hi FoldColumn	ctermfg=White	    ctermbg=NONE
+    hi SignColumn	ctermfg=White	    ctermbg=NONE
     hi DiffText		ctermfg=Black	    ctermbg=DarkYellow
 
     if v:version >= 700
@@ -385,13 +379,11 @@ elseif &background=='dark'
       hi PmenuSel	ctermfg=Black	ctermbg=fg
       hi PmenuSbar	ctermfg=fg	ctermbg=DarkBlue
       hi PmenuThumb	ctermfg=fg	ctermbg=DarkGreen
-      hi TabLine	ctermfg=fg	ctermbg=DarkGreen	cterm=underline
-      hi TabLineFill	ctermfg=fg	ctermbg=DarkGreen	cterm=underline
-      hi CursorColumn	ctermfg=NONE	ctermbg=DarkRed
-
+      hi TabLine	ctermfg=fg	ctermbg=DarkGrey	cterm=underline
+      hi TabLineFill	ctermfg=fg	ctermbg=DarkGrey	cterm=underline
       hi TabLineSel	ctermfg=fg	ctermbg=NONE
-      hi CursorLine	ctermfg=NONE	ctermbg=NONE		cterm=underline
-
+      hi CursorColumn	ctermfg=NONE	ctermbg=DarkRed
+      hi CursorLine	ctermfg=NONE	ctermbg=NONE
       hi MatchParen	ctermfg=NONE	ctermbg=DarkMagenta
     endif
     if &t_Co==8
@@ -489,7 +481,7 @@ elseif &background=='dark'
     " 256color dark terminal support here
     hi Normal		ctermfg=!d0d0d0	ctermbg=!202020	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
-    hi Normal		ctermfg=!d0d0d0	ctermbg=NONE	cterm=NONE
+    " hi Normal		ctermfg=!d0d0d0	ctermbg=NONE	cterm=NONE
     hi Comment		ctermfg=!d0d090	ctermbg=NONE	cterm=NONE
     hi Constant		ctermfg=!80c0e0	ctermbg=NONE	cterm=NONE
     hi Number		ctermfg=!e0c060	ctermbg=NONE	cterm=NONE
@@ -511,22 +503,22 @@ elseif &background=='dark'
     hi ModeMsg		ctermfg=fg	ctermbg=!000080	cterm=NONE
     hi VisualNOS	ctermfg=fg	ctermbg=!000080	cterm=NONE
     hi SpecialKey	ctermfg=!b0d0f0	ctermbg=NONE	cterm=NONE
-    hi NonText		ctermfg=!6080f0	ctermbg=!101010	cterm=NONE
+    hi NonText		ctermfg=!606060	ctermbg=NONE	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
-    hi NonText		ctermfg=!6080f0	ctermbg=NONE	cterm=NONE
+    hi NonText		ctermfg=!606060	ctermbg=NONE	cterm=NONE
     hi Directory	ctermfg=!80c0e0	ctermbg=NONE	cterm=NONE
     hi ErrorMsg		ctermfg=!d0d090	ctermbg=!800000	cterm=NONE
     hi MoreMsg		ctermfg=!c0e080	ctermbg=NONE	cterm=NONE
     hi Title		ctermfg=!f0c0f0	ctermbg=NONE	cterm=NONE
     hi WarningMsg	ctermfg=!f08060	ctermbg=NONE	cterm=NONE
     hi WildMenu		ctermfg=!000000	ctermbg=!d0d090	cterm=NONE
-    hi Folded		ctermfg=NONE	ctermbg=!004000	cterm=NONE
-    hi FoldColumn	ctermfg=!e0e0e0	ctermbg=!008000	cterm=NONE
-    hi DiffAdd		ctermfg=NONE	ctermbg=!000080	cterm=NONE
-    hi DiffChange	ctermfg=NONE	ctermbg=!800080	cterm=NONE
-    hi DiffDelete	ctermfg=!6080f0	ctermbg=!202020	cterm=NONE
-    hi DiffText		ctermfg=!000000	ctermbg=!c0e080	cterm=NONE
-    hi SignColumn	ctermfg=!e0e0e0	ctermbg=!008000	cterm=NONE
+    hi Folded		ctermfg=NONE	ctermbg=!404040	cterm=NONE
+    hi FoldColumn	ctermfg=!404040	ctermbg=NONE	cterm=NONE
+    hi DiffAdd		ctermfg=NONE	ctermbg=!004000	cterm=NONE
+    hi DiffChange	ctermfg=NONE	ctermbg=!005080	cterm=NONE
+    hi DiffDelete	ctermfg=NONE	ctermbg=!600000	cterm=NONE
+    hi DiffText		ctermfg=NONE	ctermbg=!804000	cterm=NONE
+    hi SignColumn	ctermfg=!e0e0e0	ctermbg=NONE	cterm=NONE
     hi IncSearch	ctermfg=!000000	ctermbg=!d0d0d0	cterm=NONE
     hi StatusLineNC	ctermfg=!000000	ctermbg=!c0c0c0	cterm=NONE
     hi VertSplit	ctermfg=!000000	ctermbg=!c0c0c0	cterm=NONE
@@ -556,12 +548,9 @@ elseif &background=='dark'
       hi TabLineFill	ctermfg=fg	ctermbg=!008000	cterm=NONE
       hi TabLineSel	ctermfg=fg	ctermbg=NONE	cterm=NONE
       hi CursorColumn	ctermfg=NONE	ctermbg=!800000	cterm=NONE
-      hi CursorLine	ctermfg=NONE	ctermbg=NONE	cterm=underline
+      hi CursorLine	ctermfg=NONE	ctermbg=!303030	cterm=NONE
       hi MatchParen	ctermfg=NONE	ctermbg=!800080
-      hi TabLine	cterm=underline
-      hi TabLineFill	cterm=underline
       hi Underlined	cterm=underline
-      hi CursorLine	cterm=underline
     endif
 
   endif " t_Co
